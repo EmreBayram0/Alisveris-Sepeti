@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.product1,
+.product2,
+.product3,
+.product4 {
+    width: 400px;
+    height: 100px;
+    background-color: rgb(244, 249, 249);
+    border: 1px solid black;
+    margin-top: 20px;
+    border-radius: 16px;
+    user-select: none;
+}
+
+.container div img {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    display: inline;
+    transition: all 1s;
+}
+
+.container div img:hover {
+    transform: scale(1.7);
+    transition: all 1s;
+}
+
+.container div p {
+    position: relative;
+    left: 120px;
+    bottom: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+}
+
+.product1Plus,
+.product1Minus,
+.product2Plus,
+.product2Minus,
+.product3Plus,
+.product3Minus,
+.product4Plus,
+.product4Minus {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    position: relative;
+    bottom: 150px;
+    left: 300px;
+    border-radius: 8px;
+    color: blue;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: rgba(255, 80, 80, 0.658);
+    transition: all 0.5s;
+}
+
+.product1Plus:hover,
+.product1Minus:hover,
+.product2Plus:hover,
+.product2Minus:hover,
+.product3Plus:hover,
+.product3Minus:hover,
+.product4Plus:hover,
+.product4Minus:hover {
+    background-color: white;
+    border: 1px solid black;
+    transform: scale(1.02);
+    transition: all 0.5s;
+}
+
+.product1Piece,
+.product2Piece,
+.product3Piece,
+.product4Piece {
+    width: 25px;
+    height: 25px;
+    border: 1px solid rgb(153, 141, 141);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 190px;
+    left: 245px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.hamperConfirm {
+    width: 125px;
+    height: 50px;
+    border: 2px solid blue;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    border-radius: 8px;
+    user-select: none;
+    position: relative;
+    left: 832px;
+    bottom: 105px;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+.hamperConfirm:hover {
+    background-color: blue;
+    color: white;
+    transition: all 0.5s;
+}
+
+.totalAmount {
+    position: absolute;
+    left: 560px;
+    bottom: 52px;
+    user-select: none;
+}
+
+.hamperConfirmSuccessful {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 120px;
+    background-color: rgb(40, 40, 167);
+    color: white;
+    font-weight: bold;
+    border-radius: 16px;
+    visibility: hidden;
+    position: absolute;
+    top: 250px;
+    left: 600px;
+    user-select: none;
+}
